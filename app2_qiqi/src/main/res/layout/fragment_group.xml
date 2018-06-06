@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tw.edu.ncut.login.group.GroupFragment">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="0dp"
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:weightSum="1">
+
+            <!--<Button-->
+                <!--android:id="@+id/btn_search"-->
+                <!--android:layout_width="52dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@android:color/darker_gray"-->
+                <!--android:drawableTop="@drawable/ic_search"-->
+                <!--android:paddingTop="5dp" />-->
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1.03"
+                android:background="@android:color/darker_gray"
+                android:ems="10"
+                android:hint="輸入E-mail進行搜尋或邀請"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="20dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="14sp" />
+
+
+            <Button
+                android:id="@+id/btn_invite"
+                android:layout_width="64dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray"
+                android:drawableTop="@drawable/ic_group_new_fri"
+                android:paddingTop="5dp" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.7"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_fri"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#80CBC4"
+                android:drawableTop="@drawable/ic_friend"
+                android:paddingTop="5dp"
+                android:text="好友"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btn_acc"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#80CBC4"
+                android:drawableTint="@android:color/white"
+                android:drawableTop="@drawable/ic_notebook"
+                android:paddingTop="5dp"
+                android:text="帳簿"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MoneyBook.iml" filepath="$PROJECT_DIR$/MoneyBook.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app2_mysql/app2_mysql.iml" filepath="$PROJECT_DIR$/app2_mysql/app2_mysql.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app2_qiqi/app2_qiqi.iml" filepath="$PROJECT_DIR$/app2_qiqi/app2_qiqi.iml" />
+    </modules>
+  </component>
+</project>

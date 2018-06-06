@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/group_tv_mTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12:00(time)"
+        android:textSize="12sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="34dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="35dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/group_backgroud_receive"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/group_tv_mName" />
+
+    <TextView
+        android:id="@+id/group_tv_mMessage"
+        android:layout_width="215dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="22dp"
+        android:layout_weight="1.00"
+        android:paddingLeft="10dp"
+        android:paddingTop="2dp"
+        android:text="Message"
+        android:textColor="@android:color/black"
+        android:textAlignment="viewStart"
+        android:textSize="18sp"
+        android:background="@drawable/group_background_receve2"
+        app:layout_constraintLeft_toRightOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/group_tv_mName"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_weight="0.96"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:text="MemberName"
+        android:textColor="@android:color/black"
+        android:textAlignment="viewStart"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

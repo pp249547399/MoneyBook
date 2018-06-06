@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.03"
+        android:gravity="center"
+        android:text="新增你的消費活動"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/ed_tital"
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="消費活動名稱"
+        android:inputType="textPersonName" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.03"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:text="日期:"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/h_LLayout_remider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.03"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_remider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提醒日期:"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/ed_remider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="none"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <EditText
+
+        android:id="@+id/ed_context"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.54"
+        android:background="@drawable/edittext_bg"
+        android:ems="500"
+        android:gravity="top"
+        android:hint="預計消費細項:"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_eventdialog_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:text="取消"
+            android:textColor="#80CBC4" />
+
+        <Button
+            android:id="@+id/btn_eventdialog_determine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:text="確定"
+            android:textColor="#80CBC4" />
+    </LinearLayout>
+
+</LinearLayout>

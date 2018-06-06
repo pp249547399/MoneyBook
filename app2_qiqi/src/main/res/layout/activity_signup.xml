@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    tools:context="tw.edu.ncut.login.SignupActivity">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.496"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_gravity="right"
+            android:layout_width="312dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="使用者名稱"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/white"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:drawablePadding="10dp"
+            android:drawableTint="@android:color/darker_gray"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:padding="14dp"
+            android:textColor="@android:color/darker_gray"
+            android:textColorHint="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="312dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_gravity="right"
+            android:text="信箱"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/white"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawablePadding="10dp"
+            android:drawableTint="@android:color/darker_gray"
+            android:ems="10"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:padding="14dp"
+            android:textColor="@android:color/darker_gray"
+            android:textColorHint="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/tv_password"
+            android:layout_width="313dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:padding="5dp"
+            android:text="密碼"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white"
+            android:drawableLeft="@drawable/ic_lock_open_black_24dp"
+            android:drawablePadding="10dp"
+            android:drawableTint="@android:color/darker_gray"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPersonName|textPassword"
+            android:padding="14dp"
+            android:textColor="@android:color/darker_gray"
+            android:textColorHint="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/tv_passwordangain"
+            android:layout_width="313dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_gravity="right"
+            android:text="再輸入一次密碼"
+            android:textSize="16dp"
+            android:layout_weight="0.55" />
+
+        <EditText
+            android:id="@+id/et_passwordagain"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white"
+            android:drawableLeft="@drawable/ic_lock_open_black_24dp"
+            android:drawablePadding="10dp"
+            android:drawableTint="@android:color/darker_gray"
+            android:ems="10"
+            android:hint="Password Again"
+            android:inputType="textPersonName|textPassword"
+            android:padding="14dp"
+            android:textColor="@android:color/darker_gray"
+            android:textColorHint="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_sent_mysql"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="#E0E0E0"
+            android:text="創建帳號"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
